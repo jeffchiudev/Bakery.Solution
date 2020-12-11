@@ -64,5 +64,6 @@ namespace Bakery.Tests
             Pastry testOrder = new Pastry(10);
             Assert.AreEqual(17, testOrder.PastryCost());
         }
+        
     }
 }
