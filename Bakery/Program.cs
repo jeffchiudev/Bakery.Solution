@@ -24,9 +24,12 @@ namespace Bakery
             string stringNumberOfPastry = Console.ReadLine();
             int numberOfPastry = int.Parse(stringNumberOfPastry);
             Pastry pastryOrder = new Pastry(numberOfPastry);
-            string orderSummary = $"Your order: {breadOrder} baguette and {pastryOrder} croissant."
-            Console.WriteLine("orderSummary");
-            int totalOrder = breadOrder()
+            string orderSummary = $"Your order: {breadOrder} baguette and {pastryOrder} croissant.";
+            Console.WriteLine(orderSummary);
+            int totalOrder = breadOrder.BreadCost() + pastryOrder.PastryCost();
+            string receipt = $"With your discounts, your order comes to ${totalOrder}";
+            Console.WriteLine(receipt);
+            Console.WriteLine("Thank you for coming to Pierre's, hope to see you again soon!");
 
             
 
