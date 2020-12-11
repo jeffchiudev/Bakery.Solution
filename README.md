@@ -45,12 +45,11 @@ The world of pastry is a wonderful but fast paced world requiring skill and spee
 | Description | Input | Ouput |
 | :---------- | :---- | :---- |
 | Bread |||
-| should correctly create a bread order | ||
-
-| should correctly count how many loaves of bread the customer would like to order|||
+| should correctly create a bread order | Bread newOrder = new Bread(5) | getType = Bread |
+| should correctly calculate cost of order based on number of loaves| "1" | breadCost = 5  |
 | Pastry |||
+| should correctly create a pstry order |||
 | should correctly count how many pastries the customer would like to order | ||
-||||
 ||||
 
 </p>

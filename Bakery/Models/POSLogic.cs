@@ -14,7 +14,12 @@ namespace Bakery.Models
         public int BreadQuantity {get; set;}
         public Bread(int breadQuantity)
         {
-            
+            int breadCost = 5;
+        }
+
+        public int BreadCost()
+        {
+            return 0;
         }
     }
 
