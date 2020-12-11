@@ -20,7 +20,15 @@ namespace Bakery.Models
         public int BreadCost()
         {
             int breadCost = 5;
-            return BreadQuantity * breadCost;
+            if (BreadQuantity > 2)
+            {
+                int discountCalc = BreadQuantity / 3;
+                return (BreadQuantity * breadCost) - (breadCost * discountCalc);
+            } 
+            else 
+            {
+                return BreadQuantity * breadCost;
+            }
         }
     }
 
