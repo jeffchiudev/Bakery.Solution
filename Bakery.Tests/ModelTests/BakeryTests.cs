@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using Bakery.Models
+using Bakery.Models;
 
 
 namespace Bakery.Tests
@@ -10,10 +10,11 @@ namespace Bakery.Tests
     public class POSLogicTests
     {
         [TestMethod]
-        public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+        public void Bread_MakeABreadOrder_Constructor()
         {
-        // any necessary logic to prep for test; instantiating new classes, etc.
-        Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+            Bread testBreadOrder = new Bread();
+            Assert.AreEqual(true, testBreadOrder.)
+
         }    
     }
 }
