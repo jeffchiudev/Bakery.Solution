@@ -23,7 +23,8 @@ namespace Bakery.Models
             if (BreadQuantity > 2)
             {
                 int discountCalc = BreadQuantity / 3;
-                return (BreadQuantity * breadCost) - (breadCost * discountCalc);
+                int finalBreadCost = (BreadQuantity * breadCost) - (breadCost * discountCalc);
+                return finalBreadCost;
             } 
             else 
             {
@@ -44,7 +45,9 @@ namespace Bakery.Models
         public int PastryCost()
         {
             int pastryCost = 2;
-            return PastryQuantity * pastryCost;
+            int discountCalc =  PastryQuantity / 3;
+            int finalPastryPrice = (PastryQuantity * pastryCost) - discountCalc;
+            return finalPastryPrice;
         }
     }
 }

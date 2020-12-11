@@ -52,8 +52,6 @@ The world of pastry is a wonderful but fast paced world requiring skill and spee
 | should correctly create a pastry order | testOrder.GetType() | type Pastry |
 | should correctly count cost to order 1 pastry | Pastry(1) | pastryCost = 2 |
 | should correctly calculate pastry discount of 3 for 5$ | Pastry(3) | pastryCost = 5 |
-||||
-||||
 
 </p>
 </details>
