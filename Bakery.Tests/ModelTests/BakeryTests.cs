@@ -1,13 +1,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using TODOProjectName.Models
+using Bakery.Models
 
 
-namespace ProjectName.Tests
+namespace Bakery.Tests
 {
     [TestClass]
-    public class ClassNameTests
+    public class POSLogicTests
     {
         [TestMethod]
         public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
