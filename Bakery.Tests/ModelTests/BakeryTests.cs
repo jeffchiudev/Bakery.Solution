@@ -10,10 +10,10 @@ namespace Bakery.Tests
     public class POSLogicTests
     {
         [TestMethod]
-        public void Bread_MakeABreadOrder_Constructor()
+        public void Bread_MakeABreadOrder_constructor()
         {
-            Bread testBreadOrder = new Bread();
-            Assert.AreEqual(true, testBreadOrder.)
+            Bread testBreadOrder = new Bread(1);
+            Assert.AreEqual(typeof(Bread), testBreadOrder.GetType());
 
         }    
     }
