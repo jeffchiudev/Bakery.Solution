@@ -24,10 +24,17 @@ namespace Bakery.Tests
         }    
 
         [TestMethod]
-        public void Pastry_makeorder_constructor()
+        public void Pastry_MakePastryOrder_constructor()
         {
             Pastry testOrder = new Pastry(3);
             Assert.AreEqual(typeof(Pastry), testOrder.GetType());
+        }
+
+        [TestMethod]
+        public void Pastry_CalculatePastryCost_int()
+        {
+            Pastry testOrder = new Pastry(1);
+            Assert.AreEqual(2, testOrder.PastryCost());
         }
     }
 }
