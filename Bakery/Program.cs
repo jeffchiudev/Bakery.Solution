@@ -18,13 +18,13 @@ namespace Bakery
             Console.WriteLine("---------------------------");
             Console.WriteLine("How many baguette would you like?");
             string stringNumberOfBread = Console.ReadLine();
-            int numberOfBread = int.Parse(stringBreadOrder);
+            int numberOfBread = int.Parse(stringNumberOfBread);
             Bread breadOrder = new Bread(numberOfBread);
             Console.WriteLine("How many croissant would you like?");
             string stringNumberOfPastry = Console.ReadLine();
             int numberOfPastry = int.Parse(stringNumberOfPastry);
             Pastry pastryOrder = new Pastry(numberOfPastry);
-            string orderSummary = $"Your order: {breadOrder} baguette and {pastryOrder} croissant.";
+            string orderSummary = $"Your order: {numberOfBread} baguette and {numberOfPastry} croissant.";
             Console.WriteLine(orderSummary);
             int totalOrder = breadOrder.BreadCost() + pastryOrder.PastryCost();
             string receipt = $"With your discounts, your order comes to ${totalOrder}";
