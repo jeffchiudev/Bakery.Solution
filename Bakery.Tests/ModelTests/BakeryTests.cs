@@ -50,5 +50,12 @@ namespace Bakery.Tests
             Pastry testOrder = new Pastry(1);
             Assert.AreEqual(2, testOrder.PastryCost());
         }
+
+        [TestMethod]
+        public void Pastry_CalculateDiscountForThree_int()
+        {
+            Pastry testOrder = new Pastry(3);
+            Assert.AreEqual(5, testOrder.PastryCost());
+        }
     }
 }

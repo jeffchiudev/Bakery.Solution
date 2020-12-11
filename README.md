@@ -44,13 +44,15 @@ The world of pastry is a wonderful but fast paced world requiring skill and spee
 
 | Description | Input | Ouput |
 | :---------- | :---- | :---- |
-| Bread |||
+| new Bread |||
 | should correctly create a bread order | Bread newOrder = new Bread(5) | getType = Bread |
 | should correctly calculate cost of order of 1 loaf of bread| "1" | breadCost = 5  |
 | should correctly calculate buy 2 get 1 free deal on bread | TestOrder(3) | breadCost = 10 |
-| Pastry |||
+| new Pastry |||
 | should correctly create a pastry order | testOrder.GetType() | type Pastry |
 | should correctly count cost to order 1 pastry | Pastry(1) | pastryCost = 2 |
+| should correctly calculate pastry discount of 3 for 5$ | Pastry(3) | pastryCost = 5 |
+||||
 ||||
 
 </p>
