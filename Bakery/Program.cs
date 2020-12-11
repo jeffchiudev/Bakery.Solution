@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Bakery.Models;
 
 
-namespace ScrabbleScore.Models
+namespace Bakery
 {
     public class Program
     {

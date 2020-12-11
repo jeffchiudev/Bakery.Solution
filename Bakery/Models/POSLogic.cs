@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace TODOProjectName.Models
+namespace Bakery.Models
 {
     public class TODO
     {
