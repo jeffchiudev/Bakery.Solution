@@ -1,7 +1,7 @@
 # _Bakery Point of Sale_
 
 <div align="center">
-<img src="https://github.com/jeffchiudev.png" width="200px" height="auto">
+<img src="https://github.com/jeffchiudev.png" width="200px" height="auto" style="border-radius: 15px 50px;">
 </div>
 <p align="center">Authored by Jeff Chiu</p>
 <p align="center">Updated on: 11.dec.2020</p>
@@ -55,10 +55,6 @@ The world of pastry is a wonderful but fast paced world requiring skill and spee
 
 </p>
 </details>
-
-## Known Bugs:
-
-Currently optimized for desktop browsing.  Smart device integration will be added soon.
 
 ## Support and contact details:
 
