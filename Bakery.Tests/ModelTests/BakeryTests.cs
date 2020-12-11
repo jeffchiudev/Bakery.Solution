@@ -30,7 +30,12 @@ namespace Bakery.Tests
             Assert.AreEqual(10, testBreadOrder.BreadCost());
         }    
 
-
+        [TestMethod]
+        public void Bread_CalculateDiscountForMore_int()
+        {
+            Bread testBreadOrder = new Bread(10);
+            Assert.AreEqual(35, testBreadOrder.BreadCost());
+        }
 
         [TestMethod]
         public void Pastry_MakePastryOrder_constructor()
