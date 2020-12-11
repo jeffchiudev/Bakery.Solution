@@ -24,6 +24,15 @@ namespace Bakery.Tests
         }    
 
         [TestMethod]
+        public void Bread_CalculateDiscount_int()
+        {
+            Bread testBreadOrder = new Bread(3);
+            Assert.AreEqual(10, testBreadOrder.BreadCost());
+        }    
+
+
+
+        [TestMethod]
         public void Pastry_MakePastryOrder_constructor()
         {
             Pastry testOrder = new Pastry(3);
