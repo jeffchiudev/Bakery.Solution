@@ -7,8 +7,13 @@ using Bakery.Models;
 namespace Bakery.Tests
 {
     [TestClass]
-    public class POSLogicTests
+    public class POSLogicTests : IDisposable
     {
+        public void Dispose()
+        {
+            Item.ClearAll()
+        }
+    
         [TestMethod]
         public void Bread_MakeABreadOrder_constructor()
         {
@@ -64,5 +69,6 @@ namespace Bakery.Tests
             Pastry testOrder = new Pastry(10);
             Assert.AreEqual(17, testOrder.PastryCost());
         }
+    
     }
 }

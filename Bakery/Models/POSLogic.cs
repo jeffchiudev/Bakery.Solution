@@ -6,6 +6,11 @@ namespace Bakery.Models
     public class Bread
     {
         public int BreadQuantity {get; set;}
+        private static List<Bread> _instances = new List<Bread> {};
+        public static List<Item> GetAll()
+        {
+            return _instances;
+        }
         public Bread(int breadQuantity)
         {
             BreadQuantity = breadQuantity;
@@ -23,10 +28,11 @@ namespace Bakery.Models
     public class Pastry
     {
         public int PastryQuantity {get;set;}
-        
+       
         public Pastry(int pastryQuantity)
         {
             PastryQuantity = pastryQuantity;
+            _instances.Add(this);
         }
 
         public int PastryCost()
