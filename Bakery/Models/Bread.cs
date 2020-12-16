@@ -6,6 +6,16 @@ namespace Bakery.Models
     public class Bread
     {
         public int BreadQuantity {get; set;}
+        private static List<Bread> _instances = new List<Bread> {};
+        public static List<Bread> GetAll()
+        {
+            return _instances;
+        }
+
+        public static void ClearAll()
+        {
+            _instances.Clear();
+        }
         public Bread(int breadQuantity)
         {
             BreadQuantity = breadQuantity;
@@ -17,24 +27,6 @@ namespace Bakery.Models
             int discountCalc = BreadQuantity / 3;
             int finalBreadCost = (BreadQuantity * breadCost) - (breadCost * discountCalc);
             return finalBreadCost;
-        }
-    }
-
-    public class Pastry
-    {
-        public int PastryQuantity {get;set;}
-        
-        public Pastry(int pastryQuantity)
-        {
-            PastryQuantity = pastryQuantity;
-        }
-
-        public int PastryCost()
-        {
-            int pastryCost = 2;
-            int discountCalc =  PastryQuantity / 3;
-            int finalPastryPrice = (PastryQuantity * pastryCost) - discountCalc;
-            return finalPastryPrice;
         }
     }
 }
