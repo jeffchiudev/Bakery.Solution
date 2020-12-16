@@ -10,7 +10,6 @@ namespace Bakery.Models
         public Pastry(int pastryQuantity)
         {
             PastryQuantity = pastryQuantity;
-            _instances.Add(this);
         }
 
         public int PastryCost()
